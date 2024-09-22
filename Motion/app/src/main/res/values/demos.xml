@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2019 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+-->
+<resources>
+
+    <!-- Dissolve -->
+    <string name="dissolve_label">Layout > Dissolve</string>
+    <string name="dissolve_description">
+        A dissolve creates a smooth transition between elements that completely overlap one another,
+        such as photos inside a card or other container. A foreground element fades in (appears) or
+        out (disappears) to show or hide an element behind it.
+    </string>
+    <string-array name="dissolve_apis">
+        <item>Transition</item>
+        <item>ViewOverlay</item>
+    </string-array>
+
+    <!-- Fade through -->
+    <string name="fade_through_label">Layout > Fade through</string>
+    <string name="fade_through_description">
+        Fade through involves one element fading out completely before a new one fades in. These
+        transitions can be applied to text, icons, and other elements that don\'t perfectly overlap.
+        This technique lets the background show through during a transition, and it can provide
+        continuity between screens when paired with a shared transformation.
+    </string>
+    <string-array name="fade_through_apis">
+        <item>Transition</item>
+    </string-array>
+
+    <!-- FAB transformation -->
+    <string name="fab_transformation_label">Layout > FAB transformation</string>
+    <string name="fab_transformation_description">
+        A floating action button (FAB) can transform into a card by tweening FAB size and corner
+        radius.
+    </string>
+    <string-array name="fab_transformation_apis">
+        <item>FabTransformationSheetBehavior</item>
+        <item>CircularRevealCardView</item>
+    </string-array>
+
+    <!-- Reorder -->
+    <string name="reorder_label">List > Reorder</string>
+    <string name="reorder_description">
+        Motion makes it clear when items are selected and what will happen when they’re released.
+    </string>
+    <string-array name="reorder_apis">
+        <item>ItemTouchHelper</item>
+        <item>ItemAnimator</item>
+        <item>ViewPropertyAnimator</item>
+    </string-array>
+
+    <!-- Stagger -->
+    <string name="stagger_label">List > Stagger</string>
+    <string name="stagger_description">
+        Stagger refers to applying temporal offsets to a group of elements in sequence, like a list.
+        Stagger creates a cascade effect that focuses attention briefly on each item. It can reveal
+        significant content or highlight affordances within a group.
+    </string>
+    <string-array name="stagger_apis">
+        <item>Transition</item>
+        <item>SidePropagation</item>
+    </string-array>
+
+    <!-- Loading -->
+    <string name="loading_label">List > Loading</string>
+    <string name="loading_description">
+        Motion provides timely feedback and the status of user actions. An animated placeholder UI
+        can indicate that content is loading.
+    </string>
+    <string-array name="loading_apis">
+        <item>ObjectAnimator</item>
+        <item>PagedList</item>
+    </string-array>
+
+    <!-- Oscillation -->
+    <string name="oscillation_label">List > Oscillation</string>
+    <string name="oscillation_description">
+        Oscillation occurs when an animation uses more than one overshoot. Each additional back and
+        forth movement is smaller than the previous one, until the motion stops. Oscillation may be
+        used to create a cartoon style.
+    </string>
+    <string-array name="oscillation_apis">
+        <item>SpringAnimation</item>
+        <item>EdgeEffect</item>
+    </string-array>
+
+    <!-- Shared Element -->
+    <string name="shared_element_label">Navigation > Shared element</string>
+    <string name="shared_element_description">
+        A transition may include a focal element, which is a persistent element significant to the
+        hierarchy that can be tweened. Like animated containers, focal elements enhance continuity
+        by seamlessly transforming their appearance.
+    </string>
+    <string-array name="shared_element_apis">
+        <item>Transition</item>
+        <item>FragmentNavigator.Extras</item>
+    </string-array>
+
+    <!-- Nav Fade Through -->
+    <string name="container_transform_label">Navigation > Container transform</string>
+    <string name="container_transform_description">
+        To simplify overlapping motion, consider substituting a focal element with a fade through
+        transition.
+    </string>
+    <string-array name="container_transform_apis">
+        <item>Transition</item>
+        <item>MaterialContainerTransform</item>
+        <item>FragmentNavigator.Extras</item>
+    </string-array>
+
+</resources>
